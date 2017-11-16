@@ -1,4 +1,4 @@
-package java.computational_algorithms;
+package computational_algorithms;
 
 /**
  *  Probabilistic data structure designed to tell you, rapidly and memory-efficiently, whether an element is present in a set.

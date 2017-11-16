@@ -1,4 +1,4 @@
-package java.computational_algorithms;
+package computational_algorithms;
 
 /**
  * Algorithm for finding the shortest paths between nodes in a graph.

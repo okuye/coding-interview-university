@@ -1,4 +1,4 @@
-package java.data_structures;
+package data_structures;
 
 /**
  * An abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it.

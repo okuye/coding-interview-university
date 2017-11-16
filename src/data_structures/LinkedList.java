@@ -1,4 +1,4 @@
-package java.data_structures;
+package data_structures;
 
 /**
  * A linear collection of data elements, in which linear order is not given by their physical placement in memory.

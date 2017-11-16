@@ -1,4 +1,4 @@
-package java.data_structures;
+package data_structures;
 
 /**
  * An abstract data type that can store certain values, without any particular order, and no repeated values.

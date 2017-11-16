@@ -1,4 +1,4 @@
-package java.data_structures;
+package data_structures;
 
 /**
  * Data structures that store "items" (such as numbers, names etc.) in memory.

@@ -1,4 +1,4 @@
-package java.data_structures;
+package data_structures;
 
 /**
  * An abstract data type that serves as a collection of elements, with two principal operations:
