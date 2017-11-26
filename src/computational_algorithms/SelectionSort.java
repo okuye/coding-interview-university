@@ -17,19 +17,19 @@ public class SelectionSort {
      * @param array
      * @return the array sorted by ascending order
      */
-    static int[] sort(int[] array) {
+    static <T extends Comparable<T>> void sort(T[] array) {
         long startTime = System.nanoTime();
 
         int i = 0;
         while (i < array.length) {
             int min = i; // min index
             for (int j = i + 1; j < array.length; j++) {
-                if (array[j] < array[min]) {
+                if (array[j].compareTo(array[min]) < 0) {
                     min = j;
                 }
             }
 
-            int temp = array[i];
+            T temp = array[i];
             array[i] = array[min];
             array[min] = temp;
 
@@ -39,7 +39,5 @@ public class SelectionSort {
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
         System.out.printf( "%-25s %-15s %-15s %n", "SelectionSort", duration + " ns", Arrays.toString(array));
-
-        return array;
     }
 }

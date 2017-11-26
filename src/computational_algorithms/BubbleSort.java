@@ -15,18 +15,18 @@ public class BubbleSort {
      * @param array
      * @return the array sorted by ascending order
      */
-    static int[] sort(int[] array) {
+    static <T extends Comparable<T>> void sort(T[] array) {
         long startTime = System.nanoTime();
 
         if (array == null || array.length <= 1) {
-            return array;
+            return;
         }
 
         for (int i = 0; i < array.length; i++) {
             boolean swapped = false;
             for (int j = 1; j < array.length - i; j++) {
-                if (array[j - 1] > array[j]) {
-                    int temp = array[j - 1];
+                if (array[j - 1].compareTo(array[j]) > 0) {
+                    T temp = array[j - 1];
                     array[j - 1] = array[j];
                     array[j] = temp;
                     swapped = true;
@@ -39,7 +39,5 @@ public class BubbleSort {
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
         System.out.printf( "%-25s %-15s %-15s %n", "BubbleSort", duration + " ns", Arrays.toString(array));
-
-        return array;
     }
 }
